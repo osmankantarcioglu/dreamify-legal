@@ -24,12 +24,12 @@
 
 <main><div class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective 9 August 2026 · Last updated 9 August 2026</p>
+  <p class="updated">Effective 9 August 2026 · Last updated 30 September 2026</p>
 
   <p>Dreamify creates a personalized bedtime story for a child every night. This policy explains what we collect, why, and what you can do about it. It is written for the parent or legal guardian who sets the app up. Dreamify is bought and configured by an adult, and is not directed to children for account creation or purchases.</p>
 
   <div class="callout">
-    <strong>The short version.</strong> We ask only for what a story needs. We do not ask for your child's full name, address, school, photos or contacts. There are no ads, no advertising identifiers, no third-party analytics or tracking SDKs, and we never sell or share personal data for advertising. You can export or delete everything from inside the app.
+    <strong>The short version.</strong> We ask only for what a story needs. We do not ask for your child's full name, address, school, photos or contacts. There are no ads, no advertising identifiers, no third-party analytics or tracking SDKs, and we never sell or share personal data for advertising. You can delete your account and everything in it from inside the app, and you can ask us for a copy of your data by email.
   </div>
 
   <h2>1. Who we are</h2>
@@ -59,6 +59,10 @@
       <td>To unlock the app for paying users and to restore purchases on a new device.</td>
     </tr>
     <tr>
+      <td><strong>Your own narrator voice (optional)</strong>: only if a parent chooses to record themselves, during setup or in the Parents' area. A recording made before subscribing stays on your device until the subscription starts. The recording of a short passage you read aloud is kept in your account's private storage, together with the text you read and a short sample clip of the result. No voice model is built or stored: each time a story is narrated, the recording is sent to our voice partner Fish Audio as the reference voice for that narration only, and Fish Audio does not keep it between requests.</td>
+      <td>To narrate your child's stories in your voice. Nothing else: the voice is private to your account and is not used to identify you.</td>
+    </tr>
+    <tr>
       <td><strong>Consent records</strong>: that you accepted this policy and agreed to create the child profile, with a timestamp.</td>
       <td>To be able to show that consent was given, as data-protection law requires.</td>
     </tr>
@@ -73,13 +77,13 @@
   <h2>3. Why we are allowed to process it (GDPR)</h2>
   <ul>
     <li><strong>Performance of a contract</strong>: creating, storing and playing the stories you subscribed for, and running the account.</li>
-    <li><strong>Consent</strong>: for the child profile details, which you give explicitly during setup, and for reminder notifications. You can withdraw consent at any time by deleting the profile or turning reminders off.</li>
+    <li><strong>Consent</strong>: for the child profile details, which you give explicitly during setup, for reminder notifications, and for your own narrator voice, which you give on the recording screen. You can withdraw consent at any time by deleting the profile, turning reminders off, or deleting your voice.</li>
     <li><strong>Legitimate interests</strong>: keeping the service secure, preventing abuse of the daily allowance, and fixing faults.</li>
     <li><strong>Legal obligation</strong>: keeping records of purchases where tax or consumer law requires it.</li>
   </ul>
 
   <h2>4. Children</h2>
-  <p>Dreamify is designed for a parent or guardian to use with a child. Account setup, purchases, external links and permission prompts sit behind a parental gate. The child profile is created by the adult, on the basis of the adult's consent, and holds only the story ingredients listed above: a nickname and an age group, not identifying details.</p>
+  <p>Dreamify is designed for a parent or guardian to use with a child. Purchases and links that leave the app sit behind a parental gate, and the app is set up by the adult who installs it. The child profile is created by the adult, on the basis of the adult's consent, and holds only the story ingredients listed above: a nickname and an age group, not identifying details.</p>
   <p>We do not knowingly collect personal information directly from a child, we do not show ads or in-app promotions to children, and we do not use children's data for profiling or marketing. If you believe a child has provided us with information beyond what is described here, email us and we will delete it.</p>
 
   <h2>5. Who else sees the data</h2>
@@ -87,9 +91,10 @@
   <table>
     <tr><th>Provider</th><th>What it receives</th></tr>
     <tr><td>Supabase (database, storage, authentication, serverless functions)</td><td>Everything described in section 2, as our hosting backend.</td></tr>
-    <tr><td>OpenAI and Anthropic (story text and narration audio)</td><td>The story ingredients (nickname, age group, language, interests, style, length and similar) needed to write and narrate the story. Providers are used through their API, and API inputs are not used to train their models.</td></tr>
+    <tr><td>OpenAI (story text and narration audio)</td><td>The story ingredients (nickname, age group, language, interests, style, length and similar) needed to write and narrate the story. Providers are used through their API, and API inputs are not used to train their models.</td></tr>
+    <tr><td>Fish Audio (narration in a parent's own voice, only if you record one)</td><td>With each narration: the recording you made on the voice screen, the text it reads, and the story text to narrate. Nothing is stored there between narrations. No nickname, account identity or other profile data is sent with the recording.</td></tr>
     <tr><td>fal.ai (story artwork)</td><td>A visual description of the scene. No child data or nickname.</td></tr>
-    <tr><td>RevenueCat (subscription management)</td><td>Purchase and entitlement data, and an anonymous app user identifier.</td></tr>
+    <tr><td>RevenueCat (subscription management)</td><td>Purchase and entitlement data, and an anonymous app user identifier. On iOS, also the Apple Ads attribution that Apple's AdServices framework provides for this app: whether the install came from an Apple Ads campaign, and which campaign, ad group and keyword. It contains no advertising identifier and is used only to measure our own App Store ads, never to track anyone across apps or websites.</td></tr>
     <tr><td>Apple and Google (payments and app distribution)</td><td>They process the payment themselves. We never see your card details.</td></tr>
   </table>
   <p>We do not sell personal data, and we do not share it for cross-context behavioural advertising.</p>
@@ -100,6 +105,7 @@
   <h2>7. How long we keep it</h2>
   <ul>
     <li><strong>Profile and stories</strong>: until you delete them, or until the account has been inactive for 24 months, whichever comes first.</li>
+    <li><strong>Your own narrator voice</strong>: the recording, its text and the sample clip are kept until you delete the voice on the voice screen or delete your account; either removes them from our storage. Nothing about the voice is kept at Fish Audio.</li>
     <li><strong>Consent records and purchase records</strong>: for as long as required to defend a legal claim or to satisfy tax obligations (typically up to 10 years for purchase records).</li>
     <li><strong>Server logs</strong>: a short rolling window, normally under 30 days.</li>
   </ul>
@@ -107,7 +113,7 @@
 
   <h2>8. Your rights</h2>
   <p>You can ask us to give you a copy of the data, correct it, delete it, restrict or object to processing, or receive it in a portable format. You can also withdraw consent at any time, which does not affect processing that already happened.</p>
-  <p>The fastest route is the app itself: <em>Parents → Download or delete data</em>. You can also email <a href="mailto:osmankantarcioglu@hotmail.com">osmankantarcioglu@hotmail.com</a>; we answer within 30 days. If you are in the EEA or the UK you may complain to your local data-protection authority; in Türkiye, to the Kişisel Verileri Koruma Kurumu (KVKK).</p>
+  <p>The fastest route is the app itself: <em>Parents → Delete account and data</em>. You can also email <a href="mailto:osmankantarcioglu@hotmail.com">osmankantarcioglu@hotmail.com</a>; we answer within 30 days. If you are in the EEA or the UK you may complain to your local data-protection authority; in Türkiye, to the Kişisel Verileri Koruma Kurumu (KVKK).</p>
 
   <h2>9. Security</h2>
   <p>Traffic is encrypted in transit (TLS). Data is stored with per-account access rules so one account cannot read another's stories, and story media is served through short-lived signed links. No system is perfectly secure; if a breach ever affects your data, we will notify you and the relevant authority as the law requires.</p>
